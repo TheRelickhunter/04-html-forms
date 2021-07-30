@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronaut form</title>
+</head>
+<body>
+    <h1>Astronaut app form</h1>
+    <form action="https://c678c547398e0c7c57e69d1bf13c2fda.m.pipedream.net" method="POST">
+        <div>
+            <label for="firstName">First name</label>
+            <input type="text" name="firstName" required>
+
+            <label for="middleName">Middle name</label>
+            <input type="text" name="middleName">
+            
+            <label for="lastName">Last name</label>
+            <input type="text" name="lastName" required>
+            
+        </div>
+    <div>
+            <label for="desiredMission">Desired mission</label>
+            <select name="desiredMission">
+                <option selected></option>
+                <option>SPHEREX</option>
+                <option>ASTHROS</option>
+                <option>NEASCOUT</option>
+                <option>SWOT</option>
+            </select>
+        
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" min="14" max="100" step="1">
+    </div>
+    <div>
+        <label for="gender">Gender</label>
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+    </div>
+    <div>
+        <label for="contactAddress">Contact Address</label>
+        <input type="text" name="contactAddress">
+        <label for="phoneNumber">phone number</label>
+        <input type="tel" name="phoneNumber">
+
+    </div>
+
+        <div>
+            <label for="hairColor">hair color</label>
+            <input type="color" name="hairColor">
+
+        </div>
+        <div>
+            <label for="weight">Weight</label>
+            <input type="number" name="weight" min=0 max="100">
+        </div>
+        <div>
+            <label for="personalBiography">biography</label><br>
+            <textarea name="personalBiography" rows="20" cols="30" maxlength="255">
+
+            </textarea>
+        </div>
+        <div>
+            <input type="submit" name="invioDati" value="invio dati">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+</body>
+</html>
